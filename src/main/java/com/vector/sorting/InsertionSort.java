@@ -7,12 +7,7 @@ public class InsertionSort {
         for(int i=1;i < datas.length;i++) {
             int key = datas[i];
             int j = i-1;
-            System.out.println();
-            for(int data : datas)
-                System.out.printf("%d ",data);
-            System.out.println();
-            while(j>=0 && datas[j] > key) {
-                
+            while(j>=0 && datas[j] > key) {    
                 datas[j+1] =  datas[j];
                 j-=1;
             }
@@ -28,7 +23,7 @@ public class InsertionSort {
         
         for(int data : datas)
             System.out.printf("%d ",data);
-        
+        System.out.println();
         insertionSort(datas);
         System.out.println();
         for(int data : datas)
@@ -36,3 +31,4 @@ public class InsertionSort {
             
     }
 }
+
